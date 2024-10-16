@@ -1,0 +1,64 @@
+/* Allgemeines Layout */
+body {
+    font-family: 'Bebas Neue', sans-serif; /* Schriftart aus Google Fonts */
+    background-color: black; /* Hintergrundfarbe schwarz */
+    color: white; /* Textfarbe weiß */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px; /* Größe des Logos */
+    letter-spacing: 2px; /* Optionaler Buchstabenabstand */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
