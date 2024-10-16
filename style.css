@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #003366;
+    background-color: black; /* Header ebenfalls schwarz */
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -20,6 +20,7 @@ header h1 {
     letter-spacing: 2px; /* Optionaler Buchstabenabstand */
 }
 
+/* Navigation-Links im Header */
 nav ul {
     list-style: none;
     padding: 0;
@@ -30,13 +31,48 @@ nav ul li {
     margin: 0 15px;
 }
 
+nav ul li a {
+    color: white; /* Links im Header weiß */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Unterstreichen beim Hover */
+}
+
 main {
     padding: 20px;
     text-align: center;
 }
 
+/* Stil für durchgestrichene Zutaten */
+form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="checkbox"]:not(:checked) + label {
+    text-decoration: line-through; /* Zutaten durchstreichen, wenn abgewählt */
+    color: #888888; /* Graue Farbe für abgewählte Zutaten */
+}
+
+button {
+    background-color: black; /* Button schwarz */
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333333; /* Etwas hellerer Button beim Hover */
+}
+
 footer {
-    background-color: #003366;
+    background-color: black; /* Footer ebenfalls schwarz */
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -45,20 +81,26 @@ footer {
     width: 100%;
 }
 
-h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
+/* Mobile Ansicht */
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 36px; /* Kleinere Schrift für Mobile */
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 
-button {
-    background-color: #0066cc;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-}
+    button {
+        font-size: 16px; /* Kleinere Buttons auf mobilen Geräten */
+    }
 
-button:hover {
-    background-color: #005bb5;
+    h2 {
+        font-size: 28px; /* Kleinere Überschriften auf mobilen Geräten */
+    }
+
+    footer {
+        font-size: 14px; /* Kleinere Schrift im Footer */
+    }
 }
